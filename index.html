@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CGPA Calculator</h1>
+    <table id="cgpa-table">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th> <!-- Changed to Grade instead of Grade Points -->
+          <th>Credits</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td><input type="text" placeholder="Subject Name"></td>
+          <td>
+            <select class="grade" aria-label="Select Grade">
+              <option value="">Select Grade</option>
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="P">P</option>
+              <option value="F">F</option>
+            </select>
+          </td>
+          <td><input type="number" class="credit" min="0" placeholder="Credits"></td>
+          <td><button class="remove-row">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="add-row">Add More Subjects</button>
+    <button id="calculate-cgpa">Calculate CGPA</button>
+    <h2 id="result">Your CGPA: -</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

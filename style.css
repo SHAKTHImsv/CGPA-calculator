@@ -1,65 +1,118 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-  }
-  
-  th, td {
+}
+
+th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
-  }
-  
-  input {
+}
+
+input {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 15px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  #result {
+}
+
+#result {
     text-align: center;
     margin-top: 20px;
     font-size: 1.5em;
     color: #007BFF;
-  }
-  
-  
-  
-  
-  
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and devices with width <= 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+}
+
+/* For smaller mobile devices with width <= 480px */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+    #calculate-cgpa{
+        margin-top: 10px;
+    }
+
+    #result {
+        font-size: 1.1em;
+    }
+}
